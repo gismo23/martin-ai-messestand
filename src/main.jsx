@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import MessestandViewer from './MessestandViewer'
 
-export default defineConfig({
-  plugins: [react()],
-  base: '/martin-ai-messestand/',
-})
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <MessestandViewer />
+)
