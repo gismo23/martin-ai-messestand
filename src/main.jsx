@@ -1,9 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import MessestandViewer from './MessestandViewer'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <MessestandViewer />
-  </React.StrictMode>
-)
+export default defineConfig({
+  plugins: [react()],
+  base: '/martin-ai-messestand/',
+})
