@@ -19,7 +19,20 @@
     </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Test-Element um zu sehen, ob der DOM erreichbar ist -->
+      <div style="color: white; padding: 20px;">
+        Wenn Sie diesen Text sehen, wurde React noch nicht geladen.
+      </div>
+    </div>
+    <!-- Debug-Ausgabe vor dem Script -->
+    <script>
+      console.log('DOM geladen, Root-Element:', document.getElementById('root'));
+    </script>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Debug-Ausgabe nach dem Script -->
+    <script>
+      console.log('Alle Scripts geladen');
+    </script>
   </body>
 </html>
